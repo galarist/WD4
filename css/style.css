@@ -36,3 +36,16 @@ div#homeBoxFour:hover {
     z-index: 1;
     cursor: context-menu !important;
 }
+
+.modal-header {
+    padding: 0;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+a.nav-link {
+    cursor: pointer;
+    margin-right: 5px;
+}
