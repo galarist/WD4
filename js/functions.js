@@ -52,17 +52,17 @@ function closeModal() {
 }
 
 function getFocusFname() {
-  document.getElementById("form_name").focus();
+    document.getElementById("form_name").focus();
 }
 
 function getFocusLname() {
-  document.getElementById("form_lastname").focus();
+    document.getElementById("form_lastname").focus();
 }
 
 function getFocusEmail() {
-  document.getElementById("form_email").focus();
+    document.getElementById("form_email").focus();
 }
 
 function getFocusMessage() {
-  document.getElementById("form_message").focus();
+    document.getElementById("form_message").focus();
 }
