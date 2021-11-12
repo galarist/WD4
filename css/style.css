@@ -74,3 +74,11 @@ a.nav-link {
     height: 1px;
     margin: 10px auto;
 }
+
+.shape svg {
+    position: absolute;
+    bottom: 10px;
+    height: 102px;
+    left: 10px;
+    opacity: .5;
+}
