@@ -32,6 +32,14 @@ div#homeBoxFour:hover {
     cursor: pointer;
 }
 
+div#homeBoxOne img,
+div#homeBoxTwo img,
+div#homeBoxThree img,
+div#homeBoxFour img {
+    height: 35%;
+    width: 35%;
+}
+
 .modal.show .modal-dialog {
     z-index: 1;
     cursor: context-menu !important;
@@ -75,10 +83,37 @@ a.nav-link {
     margin: 10px auto;
 }
 
+svg line {
+    stroke: black;
+    stroke-width: 2px;
+}
+
 .shape svg {
     position: absolute;
     bottom: 10px;
     height: 102px;
     left: 10px;
     opacity: .5;
+    width: 65px;
+    height: 105px;
+}
+
+.shape polygon {
+    stroke: green;
+    fill: transparent;
+    stroke-width: 5px;
+}
+
+.shape rect {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 5px;
+     width: 30px;
+     height: 30px;
+}
+
+.shape circle {
+    stroke: red;
+    fill: transparent;
+    stroke-width: 5px;
 }
