@@ -28,7 +28,7 @@ div#homeBoxOne:hover,
 div#homeBoxTwo:hover,
 div#homeBoxThree:hover,
 div#homeBoxFour:hover {
-    box-shadow:  -4px -4px 10px rgba(179, 179, 179, 0.5);
+    box-shadow: -4px -4px 10px rgba(179, 179, 179, 0.5);
     cursor: pointer;
 }
 
@@ -41,6 +41,21 @@ div#homeBoxFour:hover {
     padding: 0;
 }
 
+a, .nav-link {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size cubic-bezier(0, .5, 0, 1) 0.3s;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    background-size: 100% 2px;
+}
+
 .navbar-brand {
     cursor: pointer;
 }
@@ -48,4 +63,14 @@ div#homeBoxFour:hover {
 a.nav-link {
     cursor: pointer;
     margin-right: 5px;
+}
+
+.card img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.svgLine {
+    height: 1px;
+    margin: 10px auto;
 }

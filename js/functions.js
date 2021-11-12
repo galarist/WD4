@@ -18,16 +18,16 @@ Array.from(navBar).forEach((element, index) => {
                     aria-label="Close">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a accesskey="w" class="nav-link" data-bs-toggle="modal" href="#certs" role="button" 
-                    aria-label="Close">Certificates</a>
+                    <a accesskey="w" class="nav-link" data-bs-toggle="modal" href="#skills" role="button" 
+                    aria-label="Close">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a accesskey="a" class="nav-link" data-bs-toggle="modal" href="#skillEx" role="button">
-                    Skills & Experiences</a>
+                    <a accesskey="a" class="nav-link" data-bs-toggle="modal" href="#experiences" role="button">
+                    Experiences</a>
                 </li>
                 <li class="nav-item">
                     <a accesskey="s" class="nav-link" data-bs-toggle="modal" href="#resume" role="button" 
-                    aria-label="Close">Resume</a>
+                    aria-label="Close">Contact</a>
                 </li>
             </ul>
             
@@ -49,4 +49,20 @@ function closeModal() {
         // Remove the `modal-open` class from the body
         backdrop.remove();
     }
+}
+
+function getFocusFname() {
+  document.getElementById("form_name").focus();
+}
+
+function getFocusLname() {
+  document.getElementById("form_lastname").focus();
+}
+
+function getFocusEmail() {
+  document.getElementById("form_email").focus();
+}
+
+function getFocusMessage() {
+  document.getElementById("form_message").focus();
 }
