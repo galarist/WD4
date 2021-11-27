@@ -10,7 +10,7 @@ Array.from(navBar).forEach((element, index) => {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" accesskey="x" onclick="closeModal()">Home</a>
                 </li>
                 <li class="nav-item">
@@ -30,7 +30,7 @@ Array.from(navBar).forEach((element, index) => {
                     aria-label="Close">Contact</a>
                 </li>
             </ul>
-            
+
         </div>
     </div>
     </nav>
@@ -50,6 +50,58 @@ function closeModal() {
         backdrop.remove();
     }
 }
+
+$('.navbar-brand').on('click', function () {
+    $('#navbarNav .navbar-nav').find('li.active').removeClass('active');
+    console.clear();
+});
+
+$('#navbarNav .navbar-nav a').on('click', function () {
+    $('#navbarNav .navbar-nav').find('li.active').removeClass('active');
+    $(this).parent('li').addClass('active');
+    if ($('#aboutMe').hasClass('show')) {
+        $(this).focus();
+    } else if ($('#skills').hasClass('show')) {
+        $(this).focus();
+    } else if ($('#experiences').hasClass('show')) {
+        $(this).focus();
+    } else if ($('#resume').hasClass('show')) {
+        $(this).focus();
+    }
+});
+
+$('#homeBoxOne a').on('click', function () {
+    $('#navbarNav .navbar-nav').find('li.active').removeClass('active');
+    $('#navbarNav li:eq( 1 )').addClass('active');
+    if ($('#aboutMe').hasClass('show')) {
+        $(this).focus();
+    }
+});
+
+$('#homeBoxTwo a').on('click', function () {
+    $('#navbarNav .navbar-nav').find('li.active').removeClass('active');
+    $('#navbarNav li:eq( 2 )').addClass('active');
+    if ($('#aboutMe').hasClass('show')) {
+        $(this).focus();
+    }
+});
+
+$('#homeBoxThree a').on('click', function () {
+    $('#navbarNav .navbar-nav').find('li.active').removeClass('active');
+    $('#navbarNav li:eq( 3 )').addClass('active');
+    if ($('#aboutMe').hasClass('show')) {
+        $(this).focus();
+    }
+});
+
+$('#homeBoxFour a').on('click', function () {
+    $('#navbarNav .navbar-nav').find('li.active').removeClass('active');
+    $('#navbarNav li:eq( 4 )').addClass('active');
+    if ($('#aboutMe').hasClass('show')) {
+        $(this).focus();
+    }
+});
+
 
 function getFocusFname() {
     document.getElementById("form_name").focus();

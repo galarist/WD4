@@ -9,6 +9,15 @@ body {
     box-sizing: border-box;
 }
 
+.navbar {
+    z-index: 1056;
+}
+
+.navbar-nav li.active>a {
+    background-color: #333;
+    color: #fff;
+}
+
 div#homeBoxOne,
 div#homeBoxTwo,
 div#homeBoxThree,
@@ -49,6 +58,10 @@ div#homeBoxFour img {
     padding: 0;
 }
 
+.modal-body {
+    padding-top: 55px;
+}
+
 a, .nav-link {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
@@ -71,6 +84,21 @@ a:focus {
 a.nav-link {
     cursor: pointer;
     margin-right: 5px;
+}
+
+a.nav-link:hover {
+    text-decoration-color: transparent !important;
+}
+
+.navbar-nav li>a:hover,
+.navbar-nav li>a:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+ .navbar-nav li.active>a {
+    background-color: #333;
+    color: #fff;
 }
 
 .card img {
@@ -116,4 +144,8 @@ svg line {
     stroke: red;
     fill: transparent;
     stroke-width: 5px;
+}
+
+.modal-backdrop {
+    opacity: 0.8 !important;
 }
