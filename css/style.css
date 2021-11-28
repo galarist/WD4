@@ -11,6 +11,11 @@ body {
 
 .navbar {
     z-index: 1056;
+    display: none;
+}
+
+.navbar .display {
+    display: flex !important;
 }
 
 .navbar-nav li.active>a {
